@@ -19,7 +19,7 @@ print(factorial(5))"""
 
 #Twist 2: Compare both and time them
 
-import time
+"""import time
 
 def factorial_loop(n):
     result = 1
@@ -46,5 +46,21 @@ print("Loop result:", a)
 print("Recursive result:", b)
 print("Same answer?", a == b)
 print("Loop time:", loop_time)
-print("Recursive time:", recursive_time)
+print("Recursive time:", recursive_time)"""
+
+
+
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+try:
+    num = int(input("Enter a number: "))
+    print("Factorial:", factorial(num))
+except ValueError:
+    print("Please enter a valid integer.")
 
