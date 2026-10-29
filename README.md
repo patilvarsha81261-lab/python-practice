@@ -1,8 +1,10 @@
+
 Python Practice
 
 Daily Python practice programs, a 15-day GitHub streak challenge.
 
 I write one small program every day, add my own twist to it, and push it to GitHub.
+
 # Python Practice
 
 Daily Python practice programs, a 15-day GitHub streak challenge.
@@ -84,6 +86,6 @@ Day 7: reading files, string.punctuation, Counter.most_common()
 
 
 
-Author
+>>Author
 
 patilvarsha81261-lab
