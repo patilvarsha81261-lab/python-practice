@@ -1,4 +1,4 @@
-import random
+"""import random
 
 secret = random.randint(1, 100)
 attempts = 0
@@ -13,13 +13,18 @@ while True:
         print("Too high")
     else:
         print("Correct! You took", attempts, "tries")
-        break
+        break"""
 
 
 
-    #Twist 1: Limit attempts to 7
+    # Twist 1: limit attempts to 7
+import random
 
-    max_attempts = 7
+secret = random.randint(1, 100)
+attempts = 0
+max_attempts = 7
+
+print("I picked a number from 1 to 100. You have 7 tries.")
 
 while attempts < max_attempts:
     guess = int(input("Guess: "))
@@ -30,7 +35,7 @@ while attempts < max_attempts:
     elif guess > secret:
         print("Too high")
     else:
-        print("Correct!")
+        print("Correct! You took", attempts, "tries")
         break
 else:
     print("Out of attempts! The number was", secret)
