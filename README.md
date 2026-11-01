@@ -15,8 +15,8 @@ I write one small program every day, add my own twist to it, and push it to GitH
 - [x] Day 7: Word count (top 3 words)
 - [x] Day 8: Prime checker
 - [x] Day 9: To-do list with file
-- [ ] Day 10: Fibonacci
-- [ ] Day 11: Guess the number
+- [x] Day 10: Fibonacci (generator and checker)
+- [x] Day 11: Guess the number (levels and high score)
 - [ ] Day 12: Password generator
 - [ ] Day 13: Binary search
 - [ ] Day 14: Calculator
@@ -110,6 +110,22 @@ python day09_todo.py
 
 Use the menu to add, view, mark as done, or delete tasks. Tasks are saved in `todo.txt`, so they are still there next time.
 
+### Day 10: Fibonacci
+
+```bash
+python day10_fibonacci.py
+```
+
+Enter how many Fibonacci numbers to show (for example `10` prints `0 1 1 2 3 5 8 13 21 34`). Then enter a number to check if it is a Fibonacci number.
+
+### Day 11: Guess the number
+
+```bash
+python day11_guess_number.py
+```
+
+Choose a level (easy, medium or hard) and guess the secret number. The program says "Too low" or "Too high" after each guess. Your best score (fewest tries) is saved in `highscore.txt`.
+
 ## Tips
 
 - Always run the command from inside the `python-practice` folder. If you see "No such file or directory", you are in the wrong folder.
@@ -128,6 +144,8 @@ Use the menu to add, view, mark as done, or delete tasks. Tasks are saved in `to
 - **Day 7:** reading files, string.punctuation, Counter.most_common()
 - **Day 8:** prime numbers, checking up to the square root
 - **Day 9:** functions, saving data to a file, list pop()
+- **Day 10:** generators with yield, swapping values a, b = b, a + b
+- **Day 11:** random module, while/else, continue, saving a high score to a file
 
 ## Author
 
