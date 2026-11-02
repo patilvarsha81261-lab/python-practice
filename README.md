@@ -122,7 +122,13 @@ Enter how many Fibonacci numbers to show (for example `10` prints `0 1 1 2 3 5 8
 
 ```bash
 python day11_guess_number.py
+
 ```
+### Day 12: Password generator
+
+    python day12_password_generator.py
+
+Generate a random password with the length you choose, with or without symbols. You can also check how strong your own password is.
 
 Choose a level (easy, medium or hard) and guess the secret number. The program says "Too low" or "Too high" after each guess. Your best score (fewest tries) is saved in `highscore.txt`.
 
@@ -146,6 +152,7 @@ Choose a level (easy, medium or hard) and guess the secret number. The program s
 - **Day 9:** functions, saving data to a file, list pop()
 - **Day 10:** generators with yield, swapping values a, b = b, a + b
 - **Day 11:** random module, while/else, continue, saving a high score to a file
+- **Day 12:** string module, random.choice and shuffle, any(), checking password strength
 
 ## Author
 
