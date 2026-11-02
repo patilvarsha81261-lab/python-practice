@@ -1,3 +1,5 @@
+#day12_password_generator.py (simple version)
+
 import random
 import string
 
