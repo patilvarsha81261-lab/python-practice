@@ -1,4 +1,4 @@
-numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+"""numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 target = int(input("Number to find: "))
 
 low = 0
@@ -22,4 +22,4 @@ while low <= high:
 if found == False:
     print("Not found")
 
-print("Steps taken:", steps)
+print("Steps taken:", steps)"""
