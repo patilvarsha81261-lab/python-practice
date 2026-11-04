@@ -83,7 +83,7 @@ s.display()"""
 #initialize all attribute from constructor and get all values from user.
 
 
-class Student:
+"""class Student:
     def __init__(self, name, rollno):
         self.name = name
         self.rollno = rollno
@@ -111,8 +111,64 @@ rollno = int(input("Enter roll number: "))
 sport = input("Enter sport name: ")
 
 s = Result(name, rollno, sport)
-s.display()
+s.display()"""
    
    
-    
-         
+# heirarchycal inheritance
+#Write a Python program to demonstrate Hierarchical Inheritance.
+#Create a parent class Vehicle with an attribute brand.
+#Create two child classes:
+#Car with attributes brand, branch, and fuel_type.
+#Bike with attributes brand and engine_cc.
+#Initialize all attributes using their respective constructors.
+#Get all values from the user.
+#Create objects of the respective child classes.
+#Create a display() method in both child classes to display the vehicle details.
+
+
+
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+
+class Car(Vehicle):
+    def __init__(self, brand, branch, fuel_type):
+        super().__init__(brand)
+        self.branch = branch
+        self.fuel_type = fuel_type
+
+    def display(self):
+        print("\n----- Car Details -----")
+        print("Brand:", self.brand)
+        print("Branch:", self.branch)
+        print("Fuel Type:", self.fuel_type)
+
+
+class Bike(Vehicle):
+    def __init__(self, brand, engine_cc):
+        super().__init__(brand)
+        self.engine_cc = engine_cc
+
+    def display(self):
+        print("\n----- Bike Details -----")
+        print("Brand:", self.brand)
+        print("Engine CC:", self.engine_cc)
+
+
+print("Enter Car Details")
+brand = input("Enter car brand: ")
+branch = input("Enter car branch: ")
+fuel_type = input("Enter fuel type: ")
+
+print("\nEnter Bike Details")
+brand1 = input("Enter bike brand: ")
+engine_cc = int(input("Enter engine CC: "))
+
+
+c = Car(brand, branch, fuel_type)
+b = Bike(brand1, engine_cc)
+
+
+c.display()
+b.display()
