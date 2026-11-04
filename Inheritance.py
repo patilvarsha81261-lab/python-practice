@@ -31,7 +31,7 @@ d.bark()"""
 
 
 # Parent class
-class Student:
+"""class Student:
     def __init__(self, name, rollno):
         self.name = name
         self.rollno = rollno
@@ -71,6 +71,48 @@ m3 = float(input("Enter subject 3 marks: "))
 s = Marks(name, rollno, m1, m2, m3)
 
 # Display details
+s.display()"""
+
+
+#Multiple inheritance
+
+
+#WAP to create class student, with attribute name, rollno,.
+#create anoter class, with attribute sport,
+#create 3class result that inherit both classes which display student name , rollno and sport name
+#initialize all attribute from constructor and get all values from user.
+
+
+class Student:
+    def __init__(self, name, rollno):
+        self.name = name
+        self.rollno = rollno
+
+
+class Sports:
+    def __init__(self, sport):
+        self.sport = sport
+
+
+class Result(Student, Sports):
+    def __init__(self, name, rollno, sport):
+        Student.__init__(self, name, rollno)
+        Sports.__init__(self, sport)
+
+    def display(self):
+        print("\n----- Student Details -----")
+        print("Student Name:", self.name)
+        print("Roll Number:", self.rollno)
+        print("Sport Name:", self.sport)
+
+
+name = input("Enter student name: ")
+rollno = int(input("Enter roll number: "))
+sport = input("Enter sport name: ")
+
+s = Result(name, rollno, sport)
 s.display()
+   
+   
     
          
