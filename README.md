@@ -2,7 +2,7 @@
 
 Daily Python practice programs, a 15-day GitHub streak challenge.
 
-I write one small program every day, add my own twist to it, and push it to GitHub.
+I wrote one small program every day, added my own twist to it, and pushed it to GitHub. All 15 days are complete.
 
 ## Progress
 
@@ -17,10 +17,41 @@ I write one small program every day, add my own twist to it, and push it to GitH
 - [x] Day 9: To-do list with file
 - [x] Day 10: Fibonacci (generator and checker)
 - [x] Day 11: Guess the number (levels and high score)
-- [ ] Day 12: Password generator
-- [ ] Day 13: Binary search
-- [ ] Day 14: Calculator
-- [ ] Day 15: Bank account
+- [x] Day 12: Password generator (strength checker)
+- [x] Day 13: Binary search
+- [x] Day 14: Calculator
+- [x] Day 15: Bank account (history and custom error)
+
+## Project structure
+
+```
+python-practice/
+├── day01_hello.py
+├── day02_even_odd.py
+├── day03_fizzbuzz.py
+├── day04_palindrome.py
+├── day05_factorial.py
+├── day06_list_stats.py
+├── day07_word_count.py
+├── day08_prime_checker.py
+├── day09_todo.py
+├── day10_fibonacci.py
+├── day11_guess_number.py
+├── day12_password_generator.py
+├── day13_binary_search.py
+├── day14_calculator.py
+├── day15_bank_account.py
+├── count_words_in_file.py
+├── encapsulation.py
+├── Inheritance.py
+├── polymorphism.py
+├── fizzbuzz_output.txt
+├── palindrome_history.txt
+├── sample.txt
+├── simple.txt
+├── todo.txt
+└── README.md
+```
 
 ## Requirements
 
@@ -68,7 +99,7 @@ Enter a start, an end, and two numbers (like 3 and 5). It prints Fizz, Buzz or F
 python day04_palindrome.py
 ```
 
-Type a word or sentence to check if it reads the same backwards.
+Type a word or sentence to check if it reads the same backwards. Results can be saved in `palindrome_history.txt`.
 
 ### Day 5: Factorial
 
@@ -122,15 +153,71 @@ Enter how many Fibonacci numbers to show (for example `10` prints `0 1 1 2 3 5 8
 
 ```bash
 python day11_guess_number.py
-
 ```
-### Day 12: Password generator
-
-    python day12_password_generator.py
-
-Generate a random password with the length you choose, with or without symbols. You can also check how strong your own password is.
 
 Choose a level (easy, medium or hard) and guess the secret number. The program says "Too low" or "Too high" after each guess. Your best score (fewest tries) is saved in `highscore.txt`.
+
+### Day 12: Password generator
+
+```bash
+python day12_password_generator.py
+```
+
+Enter a password length and choose whether to include symbols. It prints a random password and shows how strong it is.
+
+### Day 13: Binary search
+
+```bash
+python day13_binary_search.py
+```
+
+Enter a number to find in a sorted list. It prints the position and the number of steps taken.
+
+### Day 14: Calculator
+
+```bash
+python day14_calculator.py
+```
+
+Enter two numbers and an operation (+ - * / ** %). It keeps running until you type `quit`.
+
+### Day 15: Bank account
+
+```bash
+python day15_bank_account.py
+```
+
+Deposit and withdraw money, view your balance and transaction history. Withdrawing more than you have shows an insufficient funds error.
+
+## Extra practice files
+
+| File | What it is |
+|------|------------|
+| `count_words_in_file.py` | Counts words, characters and lines in a text file |
+| `encapsulation.py` | Object-oriented practice: encapsulation |
+| `Inheritance.py` | Object-oriented practice: inheritance |
+| `polymorphism.py` | Object-oriented practice: polymorphism |
+
+Run them the same way:
+
+```bash
+python encapsulation.py
+python Inheritance.py
+python polymorphism.py
+python count_words_in_file.py
+```
+
+## Data files
+
+These text files are used or created by the programs.
+
+| File | Used by |
+|------|---------|
+| `sample.txt` | Day 7 word count (input text) |
+| `simple.txt` | Extra text file for practice |
+| `todo.txt` | Day 9 to-do list (saved tasks) |
+| `fizzbuzz_output.txt` | Day 3 FizzBuzz (saved output) |
+| `palindrome_history.txt` | Day 4 palindrome checker (saved results) |
 
 ## Tips
 
@@ -152,7 +239,10 @@ Choose a level (easy, medium or hard) and guess the secret number. The program s
 - **Day 9:** functions, saving data to a file, list pop()
 - **Day 10:** generators with yield, swapping values a, b = b, a + b
 - **Day 11:** random module, while/else, continue, saving a high score to a file
-- **Day 12:** string module, random.choice and shuffle, any(), checking password strength
+- **Day 12:** string module, random.choice and shuffle, any()
+- **Day 13:** binary search, sorted lists, counting steps
+- **Day 14:** if/elif chains, float(), power and remainder operators
+- **Day 15:** classes and objects, custom exceptions, raise/except
 
 ## Author
 
