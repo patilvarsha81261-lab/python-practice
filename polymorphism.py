@@ -1,6 +1,5 @@
 #simple code
 
-
 # Parent class
 class Animal:
     def sound(self):
