@@ -1,1 +1,5 @@
+student = {"name": "Varsha"}
+student["branch"] = "AIML"
+student["college"] = "DY Patil"
 
+print(student)
