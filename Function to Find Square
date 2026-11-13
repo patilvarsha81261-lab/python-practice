@@ -1,1 +1,5 @@
+def square(number):
+    return number * number
 
+n = int(input("Enter a number: "))
+print("Square:", square(n))
