@@ -1,4 +1,5 @@
 # day16_hangman.py
+
 import random
 
 WORDS = ["python", "github", "variable", "function", "loop",
@@ -120,4 +121,3 @@ while True:
     if again != "y":
         print("Thanks for playing!")
         break
-    
