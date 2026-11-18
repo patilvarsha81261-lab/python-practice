@@ -29,7 +29,7 @@ print("Steps taken:", steps)"""
 
 
 
-def binary_search(numbers, target):
+"""def binary_search(numbers, target):
     low = 0
     high = len(numbers) - 1
     steps = 0
@@ -71,7 +71,77 @@ if position != -1:
 else:
     print("Element not found")
 
-print("Binary search steps:", steps)
+print("Binary search steps:", steps)"""
 
 
+#Write a Python program to find the first occurrence (index number) of a targeted element from the given sorted list using Binary Search.
+
+
+
+"""def first_occurrence(numbers, target):
+    low = 0
+    high = len(numbers) - 1
+    result = -1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if numbers[mid] == target:
+            result = mid
+            high = mid - 1
+
+        elif numbers[mid] < target:
+            low = mid + 1
+
+        else:
+            high = mid - 1
+
+    return result
+
+
+numbers = [10, 20, 20, 20, 30, 40, 50]
+
+target = int(input("Enter target element: "))
+
+result = first_occurrence(numbers, target)
+
+if result != -1:
+    print("First occurrence found at index:", result)
+else:
+    print("Element not found")"""
+
+
+
+#Write a Python program to find the last occurrence (index number) of a targeted element from the given sorted list using Binary Search.
+
+
+
+def last_occurrence(numbers, target):
+    low = 0
+    high = len(numbers) - 1
+    result = -1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if numbers[mid] == target:
+            result = mid
+            low = mid + 1
+        elif numbers[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return result
+
+
+numbers = [10, 20, 20, 20, 30, 40, 50]
+target = int(input("Enter target element: "))
+
+result = last_occurrence(numbers, target)
+
+if result != -1:
+    print("Last occurrence found at index:", result)
+else:
+    print("Element not found")
 
