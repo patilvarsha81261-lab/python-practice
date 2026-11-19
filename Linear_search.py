@@ -1,6 +1,6 @@
 #simple linear search
 
-"""def linearSearch(number, target):
+def linearSearch(number, target):
     for number in numbers:
         if number == target:
             return 1
@@ -12,7 +12,7 @@ result = linearSearch(numbers, target)
 if result != -1:
     print(target, "is not found in", numbers)
 else:    
-    print(target, "is not found in", numbers)"""
+    print(target, "is not found in", numbers)
 
 
 
