@@ -78,7 +78,7 @@ print("Binary search steps:", steps)"""
 
 
 
-"""def first_occurrence(numbers, target):
+def first_occurrence(numbers, target):
     low = 0
     high = len(numbers) - 1
     result = -1
@@ -108,7 +108,7 @@ result = first_occurrence(numbers, target)
 if result != -1:
     print("First occurrence found at index:", result)
 else:
-    print("Element not found")"""
+    print("Element not found")
 
 
 
@@ -144,4 +144,6 @@ if result != -1:
     print("Last occurrence found at index:", result)
 else:
     print("Element not found")
+
+    
 
