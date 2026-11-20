@@ -1,3 +1,5 @@
+#Simple expense tracker
+
 expenses = []
 
 while True:
