@@ -38,10 +38,6 @@ else:
 
 
 
-
-
-
-
 # day19_tictactoe.py
 import random
 
