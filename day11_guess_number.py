@@ -1,4 +1,4 @@
-"""import random
+import random
 
 secret = random.randint(1, 100)
 attempts = 0
@@ -13,7 +13,7 @@ while True:
         print("Too high")
     else:
         print("Correct! You took", attempts, "tries")
-        break"""
+        break
 
 
 
