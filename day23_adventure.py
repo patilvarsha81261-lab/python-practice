@@ -1,3 +1,4 @@
+#Simple adventure game
 room = "hall"
 has_key = False
 
