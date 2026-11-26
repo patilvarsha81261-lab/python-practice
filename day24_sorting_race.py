@@ -14,6 +14,7 @@ print("Sorted:", numbers)
 
 
 # day24_sorting_race.py
+# full code sorting race with bubble, selection, insertion and merge sort
 import random
 import time
 
